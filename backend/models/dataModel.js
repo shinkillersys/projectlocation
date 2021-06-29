@@ -2,11 +2,11 @@ import mongoose from 'mongoose';
 
 const dataSchema = new mongoose.Schema(
   {
-    thietBi: { type: String, required: true },
-    vitri: { type: String, required: true },
-    ngay: { type: String, required: true },
-    gioden: { type: String, required: true },
-    giodi: { type: String, required: true },
+    Device: { type: String, required: true },
+    Location: { type: String, required: true },
+    Date: { type: String, required: true },
+    Time_Start: { type: String, required: true },
+    Time_End: { type: String, required: true },
   },
   {
     timestamps: true,

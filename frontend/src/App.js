@@ -28,7 +28,7 @@ function App() {
         <header className="row">
           <div>
             <Link className="brand" to="/">
-              Quan ly User
+              Manage
             </Link>
           </div>
           <div>
@@ -75,6 +75,8 @@ function App() {
         </header>
  
         <main>
+	<div className="row center">
+	<h1> Hệ Thống Định Vị Sinh Viên Ứng Dụng Tại Trường Đại Học Công Nghiệp Thành Phố Hồ Chí Minh</h1></div>
           <Route path="/signin" component={SigninScreen}></Route>
           {/* <Route
               render={({ history }) => (
@@ -96,7 +98,7 @@ function App() {
           {/* <Route path="/" component={Search}></Route> */}
         </main>
         <footer className="row center">
-          <div>Web Server Location</div>{' '}
+          <div>Nguyễn Trường Thịnh - 17057881 <br></br>Dương Thế Tài - 17011171</div>{' '}
         </footer>
       </div>
     </BrowserRouter>

@@ -23,21 +23,21 @@ export default function DataListScreen(props) {
         <table className="table">
           <thead>
             <tr>
-              <th>Thiet Bi</th>
-              <th>Vi Tri</th>
-              <th>Ngay</th>
-              <th>Gio Den</th>
-              <th>Gio Di</th>
+              <th>Tên Thiết bị</th>
+              <th>Vị Trí</th>
+              <th>Ngày</th>
+              <th>Giờ đến</th>
+              <th>Giờ đi</th>
             </tr>
           </thead>
           <tbody>
             {datas.map((item) => (
               <tr key={item._id}>
-                <td>{item.thietbi}</td>
-                <td>{item.vitri}</td>
-                <td>{item.ngay}</td>
-                <td>{item.gioden}</td>
-                <td>{item.giodi}</td>
+                <td>{item.Device}</td>
+                <td>{item.Location}</td>
+                <td>{item.Date}</td>
+                <td>{item.Time_Start}</td>
+                <td>{item.Time_End}</td>
               </tr>
             ))}
           </tbody>

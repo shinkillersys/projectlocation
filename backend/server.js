@@ -1,11 +1,18 @@
 import http from 'http';
+//const http = require("http");
 import { Server } from 'socket.io';
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import path from 'path';
+//const express = require("express");
+//const mongoose = require("mongoose");
+//const dotenv = require("dotenv");
+//const path = require("path");
 import userRouter from './routers/userRouter.js';
 import dataRouter from './routers/dataRouter.js';
+//const userRouter = require("./routers/userRouter.js");
+//const dataRouter = require("./routers/dataRouter.js");
 dotenv.config();
 
 const app = express();
